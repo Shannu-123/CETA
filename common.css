@@ -12,10 +12,6 @@ img {
     max-width: 100%;
 }
 
-.logo {
-    position: absolute;
-}
-
 .img-logo {
     width: 60px;
     height: 60px;
@@ -31,14 +27,13 @@ body {
     height: 100%;
     background-image: url('img/wallpaper.jpg');
     background-repeat: no-repeat;
-    background-size: 1500px 610px;
+    background-size: 100% 100vh;
     background-attachment: fixed;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    text-align: right;
 }
 
 nav a:hover {
@@ -52,15 +47,21 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-content: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 8px;
 }
 
 nav a {
     margin: 0px 15px;
     color: #fff;
+    align-self: center;
     padding: 10px;
+    font-size:18px; 
+}
+.img-logo{
+    margin-right:auto;
+    align-self: stretch;
 }
 
 @media only screen and (max-width:640px) {

@@ -49,6 +49,7 @@
         
         .stu-det {
             grid-column: 1/span 3;
+            padding-left:5%; 
         }
         
         .clg-det {
