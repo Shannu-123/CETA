@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-e8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>CETA</title>
+</head>
+<script>
+    function readmore() {
+        var c = document.getElementById("item1");
+        c.style.height = "25em";
+        c.style.transition = "height 1s";
+        var img = document.getElementById("eve-logo");
+        img.style.width = "17%";
+        img.style.height = "7em";
+        img.style.marginTop = "-20%";
+        img.style.transition = "all 1s";
+        document.getElementById("rd-mre").value = "COLLAPSE";
+    }
+</script>
+
+
+<body>
+
+    <div class="title" id="tit">
+        <div class="logo">
+            <img class="img-logo" src="img/logo.png" alt="">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#abt">About</a>
+            <a href="" id="eve">Events</a>
+            <a href="registration.html">Registrations</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </div>
+
+    <div class="cont">
+        <div class="eve-select">
+            <p class="past">Past</p>
+            <p class="current">Current</p>
+            <p class="upcoming">Upcoming</p>
+            <p class="stats">Statistics </p>
+        </div>
+        <div class="event-cont">
+            <div class="items" id="item1">
+                <img src="img/brain.jpg" class="event-img" id="eve-logo">
+                <span>Artificial Intelligence</span>
+                <div class="event-det">
+                    <p class="abt-event">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti ullam nulla sed qui soluta maxime aliquam possimus, ab voluptatibus odit ipsa sint a neque itaque ducimus quas deserunt distinctio. </p>
+
+                    <a href="registration.html">Register</a>
+                </div>
+
+            </div>
+            <div class="items" id="item1">
+                <img src="img/brain.jpg" class="event-img" id="eve-logo">
+                <span>Artificial Intelligence</span>
+                <div class="event-det">
+                    <p class="abt-event">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti ullam nulla sed qui soluta maxime aliquam possimus, ab voluptatibus odit ipsa sint a neque itaque ducimus quas deserunt distinctio. </p>
+
+                    <a href="registration.html">Register</a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <i class="fas fa-chart-bar"></i>
+
+</body>
+
+</html>

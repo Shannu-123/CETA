@@ -1,0 +1,83 @@
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .title {
+            background: #323642;
+            position: fixed;
+            text-align: right;
+            width: 100%;
+        }
+        
+        table {
+            border-collapse: collapse;
+            display: inline;
+        }
+        
+        th {
+            color: #323642;
+            background-color: azure;
+        }
+        
+        td,
+        tr {
+            text-align: center;
+            padding: 5px;
+            width: 7em;
+        }
+        
+        td {
+            border-bottom: 2px solid;
+        }
+        
+        tr:hover {
+            background-color: rgba(211, 211, 211, 0.3);
+        }
+        
+        .container {
+            display: grid;
+            margin-top: 5%;
+            grid-template-rows: repeat(2, 25%);
+            grid-template-columns: repeat(2, 25%);
+        }
+        
+        .fac-det {
+            grid-area: 1/1/1/span 4;
+            text-align: center;
+        }
+        
+        .stu-det {
+            grid-column: 1/span 3;
+        }
+        
+        .clg-det {
+            background-color: none;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        
+        .fac {
+            align-self: center;
+        }
+        
+        .faculty {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            justify-content: space-evenly;
+        }
+        
+        i {
+            font-size: 150px;
+            margin: 8px 12px;
+        }
+        
+        .fa-facebook-official:hover {
+            color: #3B5998;
+        }
+        
+        .fa-twitter-square:hover {
+            color: #1DA1F2;
+        }

@@ -1,0 +1,65 @@
+ .cont {
+     margin-top: 5%;
+     background: #f5f3eff8;
+ }
+ 
+ #eve {
+     background-color: #fff;
+     color: #323642;
+ }
+ 
+ .event-cont {
+     display: grid;
+     grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+     grid-row-gap: 15px;
+     margin: 3%;
+     padding-bottom: 15px;
+ }
+ 
+ .items {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     height: 15em;
+     background-color: mediumseagreen;
+     box-shadow: 0px 0px 15px black;
+ }
+ 
+ .event-img {
+     height: 15em;
+     width: 39%;
+     transition: all 0.2s;
+     box-shadow: 0px 0px 15px black;
+ }
+ 
+ .event-det {
+     width: 100%;
+     padding: 3em;
+     color: #323642;
+     font-size: 18px;
+ }
+ 
+ .event-det img {
+     width: 50px;
+     height: 50px;
+ }
+ 
+ .eve-select {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     color: #323642;
+ }
+ 
+ .eve-select p {
+     padding: 5px;
+ }
+ 
+ .eve-select p:hover {
+     background-color: #323642;
+     color: #FFF;
+ }
+ 
+ .fas {
+     color: #323642;
+ }

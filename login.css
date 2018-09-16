@@ -1,0 +1,57 @@
+            #login {
+            background-color: #fff;
+            color: #323642;
+        }
+        
+        .title {
+            background: #323642;
+            position: fixed;
+            width: 100%;
+            top: 0.5%;
+        }
+        
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .login {
+            display: grid;
+            grid-template-columns: repeat(3, 275px);
+            grid-column-gap: 10%;
+            padding-left: 25%;
+            padding-top: 10%;
+        }
+        
+        .login-cont {
+            border: 2px solid;
+            border-radius: 15px;
+            background-color: #323642;
+            padding: 20px;
+            text-align: center;
+            opacity: .5;
+            height: 360px;
+            transform: scale(1.2);
+        }
+        
+        .login-cont:hover {
+            opacity: 1;
+        }
+        
+        span {
+            padding: 5px;
+            color: gray;
+            font-size: 10px;
+        }
+        
+        span:hover {
+            color: #fff;
+        }
+        
+        .c {
+            visibility: hidden;
+        }
+        
+        #sdnha,
+        #fdnha {
+            cursor: pointer;

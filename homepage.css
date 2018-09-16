@@ -1,0 +1,169 @@
+ .img-logo {
+     width: 30px;
+     height: 30px;
+     position: relative;
+     margin: 2px 5px;
+ }
+ 
+ .clg-logo {
+     width: 150px;
+     height: 110px;
+     margin-left: 9%;
+ }
+ 
+ .dept {
+     padding: 0px;
+     font-size: 21px;
+ }
+ 
+ .clg {
+     font-size: 28px;
+     padding: 0px;
+ }
+ 
+ .ceta {
+     font-size: 75px;
+ }
+ 
+ .underscore {
+     animation: blink-animation 1s infinite;
+     -webkit-animation: blink-animation 1s steps(5, start) infinite;
+ }
+ 
+ @keyframes blink-animation {
+     to {
+         visibility: hidden;
+     }
+ }
+ 
+ @keyframes text-animate {
+     from {
+         width: 0%;
+     }
+     to {
+         width: 100%;
+     }
+ }
+ 
+ .caption {
+     margin-top: 0px;
+     animation: text-animate 5s 1;
+     overflow: hidden;
+     white-space: nowrap;
+ }
+ 
+ .arrow {
+     position: absolute;
+     bottom: 0px;
+     text-align: center;
+     font-size: 35px;
+     width: 100%;
+     transform: rotate(90deg);
+     animation: arrow-animate 1s infinite;
+ }
+ 
+ @keyframes arrow-animate {
+     0% {
+         bottom: 0px;
+     }
+     50% {
+         bottom: 7px;
+     }
+     100% {
+         bottom: 0px;
+     }
+ }
+ 
+ .dept {
+     font-size: 15px;
+ }
+ 
+ .mainhed {
+     font-size: 35px;
+     padding: 50px;
+     display: inline-block;
+     margin-top: 5%;
+ }
+ 
+ .cse {
+     font-weight: bolder;
+     padding: 0px;
+     display: inline-block;
+     margin: 0px 3px;
+     font-size: 22px;
+ }
+ 
+ .cse::first-letter {
+     font-size: 150%;
+     color: red;
+ }
+ 
+ .container {
+     display: grid;
+     grid-gap: 10px;
+     grid-template-columns: 500px 175px 350px;
+     grid-template-rows: 200px 100px 100px;
+     color: #444;
+     padding: 10px;
+     margin-top: 3%;
+     width: 100%;
+     padding-left: 10%;
+ }
+ 
+ .box {
+     background-color: #DBD8D7;
+     color: #323642;
+     border-radius: 10px;
+     padding: 15px;
+     padding-top: 3px;
+     font-size: 150%;
+     border: 2px solid;
+ }
+ 
+ .a {
+     grid-column: 1 / 3;
+     grid-row: 1;
+ }
+ 
+ .b {
+     grid-column: 3;
+     grid-row: 1 / 3;
+ }
+ 
+ .acts {
+     position: relative;
+     text-align: left;
+     list-style-type: square;
+ }
+ 
+ .sidehed {
+     font-size: 25px;
+     clear: right;
+     /* margin-left: 20px; */
+ }
+ 
+ .abt {
+     background-color: #DBD8D7;
+     padding: 60px 0px 60px 60px;
+     color: black;
+     width: 100%;
+     text-align: justify;
+ }
+ 
+ .abtmatter {
+     width: 50%;
+     padding: 15px;
+ }
+ 
+ .copyrites {
+     width: 100%;
+     height: 150px;
+     background-color: #323642;
+ }
+ 
+ @media only screen and (max-width:640px) {
+     .mainhed {
+         width: 15em;
+         top: 3em;
+     }
+ }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href=" https://fonts.googleapis.com/css?family=Roboto+Slab " rel="stylesheet ">
+    <title>CETA</title>
+</head>
+<script>
+    function opacity() {
+        var ele = document.getElementById("faculty");
+        ele.style.opacity = 1;
+        ele.style.boxShadow = "0px 0px 5px yellow";
+    }
+
+    function out() {
+        document.getElementById("faculty").style.opacity = 0.5;
+        document.getElementById("faculty").style.boxShadow = "none";
+    }
+
+    function opacity1() {
+        var ele = document.getElementById("student");
+        ele.style.opacity = 1;
+        ele.style.boxShadow = "0px 0px 5px yellow";
+    }
+
+    function out1() {
+        document.getElementById("student").style.opacity = 0.5;
+        document.getElementById("student").style.boxShadow = "none";
+    }
+
+    function fregister() {
+        document.getElementById("student").style.visibility = "hidden";
+        var ele = document.getElementById("faculty");
+        ele.style.gridColumn = 2;
+
+        ele.innerHTML = "<h3> <i class=\"fa fa-chevron-left\"></i> Register Here </h3>";
+        ele.style.height = "45px";
+        ele.style.opacity = 1;
+        ele.style.transition = "height 0.7s"
+        var fele = document.getElementById("fregister");
+        fele.style.gridColumn = 1;
+        fele.style.gridRow = 1;
+        fele.style.visibility = "visible";
+        fele.style.opacity = 1;
+        fele.style.transition = "all 0.7s";
+    }
+
+    function sregister() {
+        document.getElementById("faculty").style.visibility = "hidden";
+        var ele = document.getElementById("student");
+        ele.style.gridColumn = 1;
+        ele.style.gridRow = 1;
+        ele.innerHTML = "<h2>Register Here <i class=\"fa fa-chevron-right\"></i></h2>";
+        ele.style.opacity = 1;
+        ele.style.height = "45px";
+        ele.style.transition = "height 0.7s"
+        var sele = document.getElementById("sregister");
+        sele.style.gridColumn = 2;
+        sele.style.gridRow = 1;
+        sele.style.visibility = "visible";
+        sele.style.opacity = 1;
+        sele.style.transition = "all 0.7s";
+    }
+</script>
+
+<body>
+    <div class="title" id="tit">
+        <div class="logo">
+            <img class="img-logo" src="img/logo.png" alt="">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#abt">About</a>
+            <a href="">Events</a>
+            <a href="registration.html">Registrations</a>
+            <a href="login.html">Login</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </div>
+    <div class="login">
+        <div class="login-cont" id="faculty">
+            <form action="get">
+                <img src="img/faculty.png" alt="">
+                <p class="login-name">Faculty Login</p>
+                <input type="text" name="faculty-name" placeholder="Username" id="funame" onfocus="opacity()" onfocusout="out()"> <br>
+                <input type="password" name="faculty-password" placeholder="Password" id="fpwd" onfocus="opacity()"> <br>
+                <input type="submit" value="Login"> <br> <br>
+                <span><a href=""> Forgot Password?</a></span>
+                <span><a id="fdnha" onclick="fregister()" >Do Not Have Account</a></span>
+
+            </form>
+        </div>
+        <div class="login-cont" id="student">
+            <form action="get">
+                <img src="img/student.png" alt="">
+                <p class="login-name">Student Login</p>
+                <input type="text" name="stu-rno" placeholder="Roll Number" onfocus="opacity1()" onfocusout="out1()"> <br>
+                <input type="password" name="stu-pwd" placeholder="Password" onfocus="opacity1()"> <br>
+                <input type="submit" value="Login"> <br> <br>
+                <span><a href=""> Forgot Password?</a></span>
+                <span><a id="sdnha" onclick="sregister()">Do Not Have Account</a></span>
+            </form>
+        </div>
+        <div class="login-cont c" id="fregister">
+            <form action="login.php" method="POST">
+                <input type="text" name="fname" id="" placeholder="Name" required> <br> <input type="text" name="fid" id="" placeholder="Faculty Id" required> <br> <input type="password" name="fpwd" id="" placeholder="Password" required> <br>
+                <input type="password" id="" placeholder="Confirm-Password" required> <br> Gender:<input type="radio" name="gender" id=""> Male
+                <input type="radio" name="gender" id=""> Female <br> <input type="email" name="femail" id="" placeholder="Email"> <br> <input type="number" name="fmobile" id="" placeholder="Mobile No."> <br>
+                <select name="fdesignition" id="">
+                    <option value="">--Designition--</option>
+                    <option value="prof">Professor</option>
+                    <option value="assoc.prof">Associate Professor</option>
+                    <option value="asst.prof">Assistant Professor</option>
+                </select>
+                <input type="submit" value="Register">
+
+            </form>
+        </div>
+        <div class="login-cont c" id="sregister">
+            <form action="ss" method="POST">
+                <input type="text" name="" id="" placeholder="Name" required> <br> <input type="text" name="" id="" placeholder="Roll Number" required> <br> <input type="password" name="" id="" placeholder="Password" required> <br>
+                <input type="password" name="" id="" placeholder="Confirm-Password" required> <br> Gender:<input type="radio" name="gender" id=""> Male
+                <input type="radio" name="gender" id=""> Female <br> <input type="email" name="" id="" placeholder="Email"> <br> <input type="number" name="" id="" placeholder="Mobile No."> <br>
+                <select name="" id="">
+                    <option value="">--Section--</option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                    <option value="">D</option>
+                </select>
+                <input type="submit" value="Register">
+
+            </form>
+        </div>
+    </div>
+</body>
